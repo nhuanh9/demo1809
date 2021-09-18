@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body >
+<input oninput="console.log('Thay đổi')" onclick="console.log('Bấm ít thôi')">
+
+=> bàn phím
+=> chuột
+=> input
+=> click
+=> "" trong cặp ngoặc này viết mã js nhé
+<input type="text" id="qk">
+<button id="xa">XA</button>
+<script>
+    document.getElementById('qk').addEventListener('keydown', (lag) => {
+        console.log(lag)
+        if(lag.key == 'ArrowUp') {
+            alert('Khoảng trắng')
+        }
+    })
+    document.getElementById('xa').addEventListener('click', () => {
+        gettHello()
+    })
+
+    function gettHello() {
+        alert('Hello');
+    }
+</script>
+</body>
+</html>
